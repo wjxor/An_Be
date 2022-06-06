@@ -1,6 +1,7 @@
 package com.wjxor.An_Be.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,11 @@ public class ArticleService {
 		
 		
 		return articleDao.getArticle(id);
+	}
+
+	public List<Article> getArticles(Map<String, Object> param) {
+
+		return articleDao.getArticles(param);
 	}
 
 }
