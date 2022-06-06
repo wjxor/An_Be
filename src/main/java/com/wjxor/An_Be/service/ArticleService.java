@@ -10,13 +10,17 @@ import com.wjxor.An_Be.dto.Article;
 
 @Service
 public class ArticleService {
-
 	@Autowired
 	private ArticleDao articleDao;
 
 	public List<Article> getArticles() {
-
 		return articleDao.getArticles();
+	}
+
+	public Article getArticle(int id) {
+		
+		
+		return articleDao.getArticle(id);
 	}
 
 }
